@@ -23,10 +23,10 @@ function displayTime() {
     "December",
   ];
   var dateTime = new Date();
-  var hrs = dateTime.getHours() - 12;
+  var hrs = dateTime.getHours();
   var min = dateTime.getMinutes();
   var sec = dateTime.getSeconds();
-  var date = days[dateTime.getDay()];
+  var day = days[dateTime.getDay()];
   var monthDate = Months[dateTime.getMonth()];
   var daysDate = dateTime.getDate();
 
@@ -40,7 +40,7 @@ function displayTime() {
   document.getElementById("hour").innerHTML = hrs + ":";
   document.getElementById("minutes").innerHTML = min + ":";
   document.getElementById("seconds").innerHTML = sec;
-  document.getElementById("date").innerHTML = date;
+  document.getElementById("date").innerHTML = day + ",";
   document.getElementById("daysDates").innerHTML = monthDate + " " + daysDate;
 }
 setInterval(displayTime, 10);
