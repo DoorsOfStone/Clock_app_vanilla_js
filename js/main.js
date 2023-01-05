@@ -36,6 +36,9 @@ function displayTime() {
   if (min < 10) {
     min = "0" + min;
   }
+  if (hrs > 12) {
+    hrs = hrs - 12;
+  }
 
   document.getElementById("hour").innerHTML = hrs + ":";
   document.getElementById("minutes").innerHTML = min + ":";
