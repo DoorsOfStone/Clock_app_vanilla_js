@@ -27,7 +27,7 @@ function displayTime() {
   var min = dateTime.getMinutes();
   var sec = dateTime.getSeconds();
   var date = days[dateTime.getDay()];
-  var monthDate = Months[dateTime.getDate()];
+  var monthDate = Months[dateTime.getMonth()];
   var daysDate = dateTime.getDate();
 
   if (sec < 10) {
