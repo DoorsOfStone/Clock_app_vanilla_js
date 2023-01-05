@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('./images/nguyen-tp-hai-y0Q4z90TlWI-unsplash\ \(1\).jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    object-position: left;
+}
+.container{
+    min-height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+    
+}
+.clock-Display{
+    height: 300px;
+    width: 900px;
+    background-color: rgba(0, 0, 0, 0.781);
+    border-radius: 5px;
+    box-shadow: 5px 5px 30px 20px rgba(75, 60, 243, 0.377) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock-Display span{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 70px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:  #f5afdd;
+   
+    height: 100px;
+    
+}
+#date{
+    color: rgb(255, 255, 255);
+}
+
+
+.days span{
+    padding: 10px;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: lighter;
+    color: white;
+}
+.days span:hover{
+    color: rgba(22, 228, 243, 0.849);
+    transition: all 0.25s ease-in-out;
+  
+}
