@@ -21,9 +21,17 @@ body{
     
     
 }
-.clock-Display{
+.clock-contain{
+    width: 1000px;
     height: 300px;
-    width: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clock-Display{
+    height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 5px;
     box-shadow: 5px 5px 30px 20px rgba(75, 60, 243, 0.377) ;

@@ -38,10 +38,13 @@ function displayTime() {
   }
   if (hrs > 12) {
     hrs = hrs - 12;
+    sec = sec + " pm";
+  } else {
+    sec = sec + " am";
   }
 
-  document.getElementById("hour").innerHTML = hrs + ":";
-  document.getElementById("minutes").innerHTML = min + ":";
+  document.getElementById("hour").innerHTML = hrs + " :";
+  document.getElementById("minutes").innerHTML = min + " :";
   document.getElementById("seconds").innerHTML = sec;
   document.getElementById("date").innerHTML = day + ",";
   document.getElementById("daysDates").innerHTML = monthDate + " " + daysDate;
